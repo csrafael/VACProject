@@ -1,0 +1,12 @@
+package classes;
+
+public class Rules 
+{
+	public Rules() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void executeRules (int ruleNumber, int[] ac ) {
+		
+	}
+}

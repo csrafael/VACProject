@@ -1,0 +1,22 @@
+package classes;
+
+import java.util.*;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		List<int> test = new List<int>();
+	}
+	
+	private void startAC() 
+	{
+		
+	}
+	private void printAC()
+	{
+		
+	}
+}

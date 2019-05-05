@@ -1,0 +1,58 @@
+package classes;
+
+import java.util.*;
+
+import classes.*;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		startAC();
+		
+	}
+	
+	private static void startAC() 
+	{
+		Scanner scn = new Scanner(System.in);
+		Rules rule = new Rules();
+		Random r = new Random();
+		
+		int interactions = 0;
+		int[][] acInicial = new int[100][100];
+		
+		System.out.print("Quantas Interações: ");
+		interactions = scn.nextInt();
+		scn.close();
+		
+		for(int i=0;i<100;i++) {
+			acInicial[0][i] = r.nextInt(2);
+		}
+		
+		
+		acInicial = rule.executeRules(93, acInicial, 5, 10);
+		
+		for (int i=0;i<interactions;i++) {
+			String texto = new String();
+			
+			texto = "";
+			
+			for(int j = 0; j<100;j++) {
+				texto += acInicial[i][j]+" ";
+			}
+			
+			System.out.print(texto+"\n");
+		}
+	}
+	
+	private static void createPanel() {
+		
+	}
+	
+	private static void printAC()
+	{
+		
+	}
+}

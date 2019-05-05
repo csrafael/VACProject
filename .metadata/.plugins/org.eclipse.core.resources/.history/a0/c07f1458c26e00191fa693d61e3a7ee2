@@ -1,0 +1,36 @@
+package classes;
+
+import java.util.*;
+import javax.*;
+
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		startAC();
+		
+	}
+	
+	private static void startAC() 
+	{
+		Scanner scn = new Scanner(System.in);
+		System.out.print("Quantas Interações: ");
+		int interactions = scn.nextInt();
+		
+		int acInicial[];
+		Random r = new Random();
+		
+	}
+	
+	private static void createPanel() {
+		
+	}
+	
+	private static void printAC()
+	{
+		
+	}
+}

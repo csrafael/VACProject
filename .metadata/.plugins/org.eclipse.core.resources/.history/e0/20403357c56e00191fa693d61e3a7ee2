@@ -1,0 +1,50 @@
+package classes;
+
+import java.util.*;
+
+import classes.*;
+import jdk.jfr.internal.cmd.Execute;
+
+public class Main 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		startAC();
+		
+	}
+	
+	private static void startAC() 
+	{
+		Scanner scn = new Scanner(System.in);
+		Rules rule = new Rules();
+		Random r = new Random();
+		
+		int interactions = 0;
+		int[][] acInicial;
+		
+		System.out.print("Quantas Interações: ");
+		interactions = scn.nextInt();
+		scn.close();
+		
+		acInicial = new int[interactions][100];
+		for(int i=0;i<100;i++) {
+			acInicial[0][i] = r.nextInt(1);
+		}
+		
+		
+		acInicial = rule.executeRules(93, acInicial, 100, interactions);
+		
+		
+	}
+	
+	private static void createPanel() {
+		
+	}
+	
+	private static void printAC()
+	{
+		
+	}
+}
