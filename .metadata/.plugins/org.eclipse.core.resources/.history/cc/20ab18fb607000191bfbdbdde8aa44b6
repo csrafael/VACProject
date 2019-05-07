@@ -28,7 +28,7 @@ public class Main
 				+"\n    Os valores iniciais são aleatórios e a ordem de apresentação é crescente."
 				+"\n    Isto é, a primeira interação é a primeira linha."
 				+"\n    Automato limitado a 1000 interações e de tamanho 100");
-		System.out.println("\nQuantas Interações: ");
+		System.out.println("Quantas Interações: ");
 		interactions = scn.nextInt();
 		
 		System.out.println("Qual Regra(50,93,226)? ");
