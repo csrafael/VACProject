@@ -30,16 +30,15 @@ public class Rules extends JPanel
     @Override
     public void paintComponent(Graphics g) {
     	Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-    	
-    	for(int i = 0; i <= screenSize.width; i+=1){
-            for(int j = 0; j <= screenSize.height; j+=1){
-                if(ac[i][j]==0) {                	
-                	g.setColor(Color.white);
-                	g.fillRect(i, j, 1, 1);
+    	//Alterar a numeração do incremento para facilitar a visualização (Regra 90: i=j=2)
+    	for(int i = 0; i <= acSize; i+=2){
+            for(int j = 0; j <= interactions; j+=2){
+                if(ac[j][i]==0) {                	
+                	g.clearRect(i, j, 2, 2);
                 }
                 else {
-                	g.setColor(Color.BLACK);
-                	g.fillRect(i, j, 1, 1);
+                	g.setColor(Color.black);
+                	g.fillRect(i, j, 2, 2);
                 }
             }
         }

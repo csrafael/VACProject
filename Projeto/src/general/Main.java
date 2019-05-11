@@ -79,7 +79,7 @@ public class Main
 			
 			System.out.println(texto);
 		}
-	   /* JFrame frame = new JFrame();
+	   JFrame frame = new JFrame();
 	    Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 	    
 	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -89,7 +89,7 @@ public class Main
 	    frame.setBackground(Color.LIGHT_GRAY);
 	    frame.add(new Rules(ac, size, interactions));
 	    frame.pack();
-	    frame.setVisible(true);*/
+	    frame.setVisible(true);
 	    
 	}
 	
